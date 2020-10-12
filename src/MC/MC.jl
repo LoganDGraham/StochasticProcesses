@@ -8,19 +8,19 @@ walks, in particular.
 """
 module MC
 
+using ElementVectorSamplers
+using NeighborSamplers
+using MultiSamplers
+using MarkovChains
+using RandomWalks
+using MultiRandomWalks
+using SimulateMarkovChains
+using PlotMarkovChains
+
 export AbstractMarkovChain, MarkovChain  # MarkovChains.jl
 export RandomWalk, randomwalkmc  # RandomWalks.jl
 export rand  # SimulateMarkovChains.jl
 export MultiRandomWalk, nwalkers  # MultiRandomWalks.jl
 export plot  # PlotMarkovChains.jl
-
-include("ElementVectorSamplers.jl")
-include("NeighborSamplers.jl")
-include("MultiSamplers.jl")
-include("MarkovChains.jl")
-include("RandomWalks.jl")
-include("MultiRandomWalks.jl")
-include("SimulateMarkovChains.jl")
-include("PlotMarkovChains.jl")
 
 end
