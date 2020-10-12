@@ -4,10 +4,10 @@ In this module, we implement methods for simulating Markov chains.
 module SimulateMarkovChains
 using Distributions: Categorical, rand, Sampleable
 using LightGraphs: AbstractGraph
-using MarkovChains
-using RandomWalks
-using ElementVectorSamplers
-using NeighborSamplers
+using StochasticProcesses.MC.MarkovChains
+using StochasticProcesses.MC.RandomWalks
+using StochasticProcesses.MC.ElementVectorSamplers
+using StochasticProcesses.MC.NeighborSamplers
 export rand
 
 """

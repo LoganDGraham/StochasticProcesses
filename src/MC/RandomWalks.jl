@@ -4,11 +4,11 @@ process.
 """
 module RandomWalks
 using LinearAlgebra: Diagonal
-using MarkovChains
 using LightGraphs: AbstractGraph, adjacency_matrix, degree, nv, vertices
 using Distributions: Distribution, rand, Sampleable
-using ElementVectorSamplers
-using NeighborSamplers
+using StochasticProcesses.MC.ElementVectorSamplers
+using StochasticProcesses.MC.NeighborSamplers
+using StochasticProcesses.MC.MarkovChains
 export RandomWalk, randomwalkmc
 
 

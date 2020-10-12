@@ -8,7 +8,7 @@ example.
 module MultiSamplers
 using Distributions: AbstractRNG, Discrete, Multivariate, Sampleable
 using LightGraphs: AbstractGraph, nv
-using NeighborSamplers
+using StochasticProcesses.MC.NeighborSamplers
 export MultiSampler, rand
 
 
