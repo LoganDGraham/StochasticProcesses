@@ -6,3 +6,9 @@
 [![Coverage](https://coveralls.io/repos/github/LoganDGraham/StochasticProcesses.jl/badge.svg?branch=master)](https://coveralls.io/github/LoganDGraham/StochasticProcesses.jl?branch=master)
 
 A lightweight, efficient package for simulating stochastic processes on various domains.
+
+## Installation
+Installation is straightforward: enter Pkg mode by hitting `]`, and then
+```julia-repl
+(v1.0) pkg> add StochasticProcesses
+```
