@@ -5,9 +5,9 @@ the same domain.
 """
 module MultiRandomWalks
 using LightGraphs: AbstractGraph
-using StochasticProcesses.MC.MarkovChains: AbstractMarkovChain
-using StochasticProcesses.MC.ElementVectorSamplers
-using StochasticProcesses.MC.MultiSamplers
+using MarkovChains: AbstractMarkovChain
+using ElementVectorSamplers
+using MultiSamplers
 export MultiRandomWalk, nwalkers
 
 

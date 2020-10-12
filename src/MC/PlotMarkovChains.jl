@@ -8,9 +8,9 @@ using GraphRecipes
 using GraphPlot
 using LightGraphs: AbstractGraph, nv, vertices
 using Distributions: Sampleable
-using StochasticProcesses.MC.ElementVectorSamplers: ElementVectorSampler
-using StochasticProcesses.MC.RandomWalks
-using StochasticProcesses.MC.SimulateMarkovChains
+using ElementVectorSamplers: ElementVectorSampler
+using RandomWalks
+using SimulateMarkovChains
 export plot
 
 """

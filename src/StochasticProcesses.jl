@@ -18,6 +18,8 @@ MultiRandomWalk, nwalkers,
 # PlotMarkovChains.jl
 plot
 
-# Submodules
 include("MC/MC.jl")
+# using submodules
+# MC
+using .MC
 end
