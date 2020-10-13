@@ -14,7 +14,7 @@ Installation is straightforward: enter Pkg mode by hitting `]`, and then run
 ```
 
 ## Basic Example
-Bring `StochasticProcesses`'s exported functions and structs into the namespace by running
+Bring `StochasticProcesses`'s exported items into the namespace by running
 ```julia-repl
 using StochasticProcesses
 ```
