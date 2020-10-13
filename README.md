@@ -28,3 +28,5 @@ Simulate 20 realizations of the random walk `rw` and plot the results:
 ```julia-repl
 plot(rw)
 ```
+
+A pop-up window should render something like the following:
