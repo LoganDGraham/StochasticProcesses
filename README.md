@@ -14,7 +14,7 @@ Installation is straightforward: enter Pkg mode by hitting `]`, and then run
 ```
 
 ## Basic Example
-Bring StochasticProcesses's exported functions and structs into the namespace by running
+Bring `StochasticProcesses`'s exported functions and structs into the namespace by running
 ```julia-repl
 using StochasticProcesses
 ```
@@ -24,7 +24,7 @@ Instantiate a one-dimensional random walk:
 rw = RandomWalk(1)
 ```
 
-Simulate 20 realizations of the random walk rw and plot the results:
-```
+Simulate 20 realizations of the random walk `rw` and plot the results:
+```julia-repl
 plot(rw)
 ```
