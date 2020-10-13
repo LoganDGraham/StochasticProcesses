@@ -30,3 +30,4 @@ plot(rw)
 ```
 
 A pop-up window should render something like the following:
+<img src='/images/rw_example.png' width='500' height='300'>
