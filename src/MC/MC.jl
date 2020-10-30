@@ -7,6 +7,7 @@ In addition to general Markov chains, we offer special functionality for working
 walks, in particular.
 """
 module MC
+using StochasticProcesses
 export
 AbstractMarkovChain, MarkovChain,  # MarkovChains.jl
 RandomWalk, randomwalkmc,  # RandomWalks.jl
