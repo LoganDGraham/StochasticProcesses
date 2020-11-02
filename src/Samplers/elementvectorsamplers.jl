@@ -4,10 +4,6 @@ elements are `0`. In this brief module, we subtype `Sampleable` to allow random 
 which each length-`n` element vector is equally likely to be drawn, then have its direction
 reversed, w.p. 1/2. This is useful for random walks on integer lattices, among other things.
 """
-module ElementVectorSamplers
-using Distributions: AbstractRNG, Discrete, Multivariate, Sampleable
-export EVecSampler, ElementVectorSampler, rand
-
 
 """
     ElementVectorSampler
@@ -52,5 +48,4 @@ function Base.rand(rng::AbstractRNG, elementvectorsampler::ElementVectorSampler)
     # pick an index to replace with 1 or -1 (uses multiple dispatch)
     vector[rand(1:elementvectorsampler.dimension)] = 1*rand((-1,1))
     return vector
-end
 end

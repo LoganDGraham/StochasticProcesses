@@ -1,20 +1,4 @@
 """
-We define a `RandomWalk` struct herein. This is a discrete-time, discrete-space stochastic
-process.
-"""
-module RandomWalks
-using LinearAlgebra: Diagonal
-using LightGraphs: AbstractGraph, adjacency_matrix, degree, nv, vertices
-using Distributions: Distribution, rand, Sampleable
-using StochasticProcesses
-using StochasticProcesses.MC
-using StochasticProcesses.MC.ElementVectorSamplers
-using StochasticProcesses.MC.NeighborSamplers
-using StochasticProcesses.MC.MarkovChains
-export RandomWalk, randomwalkmc
-
-
-"""
     RandomWalk{S,T,U<:Sampleable} <: AbstractMarkovChain
 
 ##### Fields
@@ -115,5 +99,4 @@ function randomwalkmc(graph::AbstractGraph, initialvertex=rand(1:nv(graph));
         # broadcast division
         return MarkovChain(Diagonal(1 ./ degree(graph))*adjacency_matrix(graph),initialdist)
     end
-end
 end

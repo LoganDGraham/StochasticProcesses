@@ -1,13 +1,8 @@
 """
-In this brief module, we define a `Distribution` that allows random draws in which each of a
+In this brief script, we define a `Distribution` that allows random draws in which each of a
 given vertex's neighbors is equally likely to be drawn. This is useful for random walks,
 among other things.
 """
-module NeighborSamplers
-using Distributions: AbstractRNG, Discrete, rand, Sampleable, Univariate
-using LightGraphs: AbstractGraph, neighbors, vertices
-export NeighborSampler, rand
-
 
 """
     NeighborSampler{S<:AbstractGraph, T} <: Sampleable{Univariate, Discrete}
@@ -67,5 +62,4 @@ function Base.rand(rng::AbstractRNG, neighborsampler::NeighborSampler)
     else
         error("vertex has no neighbors.")
     end
-end
 end

@@ -3,15 +3,6 @@ We define a `MultiRandomWalk` struct herein. This is a discrete-time, discrete-s
 stochastic process. A `MultiRandomWalk` is a `RandomWalk` with multiple agents walking on
 the same domain.
 """
-module MultiRandomWalks
-using LightGraphs: AbstractGraph
-using StochasticProcesses
-using StochasticProcesses.MC
-using StochasticProcesses.MC.MarkovChains: AbstractMarkovChain
-using StochasticProcesses.MC.ElementVectorSamplers
-using StochasticProcesses.MC.MultiSamplers
-export MultiRandomWalk, nwalkers
-
 
 """
     MultiRandomWalk{S,T,U<:Sampleable} <: AbstractMarkovChain
@@ -120,4 +111,4 @@ Return the number of walkers in `mrw`.
 function nwalkers(mrw::MultiRandomWalk)
     return length(initialstate)
 end
-end
+#end

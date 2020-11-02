@@ -6,20 +6,33 @@ A lightweight, efficient package for simulating stochastic processes on various 
 module StochasticProcesses
 
 export
-# MC
-# MarkovChains.jl
+
+# markovchains.jl
 AbstractMarkovChain, MarkovChain,
-# RandomWalks.jl
+
+# randomwalks.jl
 RandomWalk, randomwalkmc,
-# SimulateMarkovChains.jl
+
+# simulatemarkovchains.jl, simulaterandomwalks.jl
 rand,
-# MultiRandomWalks.jl
+
+# multirandomwalks.jl
 MultiRandomWalk, nwalkers,
-# PlotMarkovChains.jl
+
+# plotmarkovchains.jl
 plot
 
-include("MC/MC.jl")
-# using submodules
-# MC
-using .MC
+# include submodules
+include("Samplers/Samplers.jl")
+include("MarkovChains/MarkovChains.jl")
+include("RandomWalks/RandomWalks.jl")
+include("PlotStochasticProcesses/PlotStochasticProcesses.jl")
+include("GridWalks/GridWalks.jl")
+
+# use submodules
+using .Samplers
+using .MarkovChains
+using .RandomWalks
+using .PlotStochasticProcesses
+using .GridWalks
 end

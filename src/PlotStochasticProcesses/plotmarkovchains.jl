@@ -1,19 +1,8 @@
 """
 This module contains plotting functionality for `MarkovChains` (including `RandomWalks`) on
-integer lattices and on graphs. We wrap functions from the `GraphPlot` and `Plots` libraries.
+integer lattices and on graphs. We wrap functions from the `GraphPlot` and `Plots`
+libraries.
 """
-module PlotMarkovChains
-using Plots
-using GraphRecipes
-using GraphPlot
-using LightGraphs: AbstractGraph, nv, vertices
-using Distributions: Sampleable
-using StochasticProcesses
-using StochasticProcesses.MC
-using StochasticProcesses.MC.ElementVectorSamplers: ElementVectorSampler
-using StochasticProcesses.MC.RandomWalks
-using StochasticProcesses.MC.SimulateMarkovChains
-export plot
 
 """
     plot(randomwalk::RandomWalk{<:DataType, <:Real, <:Sampleable},
@@ -74,6 +63,4 @@ function plot(randomwalk::RandomWalk{<:AbstractGraph, <:Integer, <:Sampleable},
                   nodesize=0.2, names=nodenames, curves=false, method=method)
     end
     return gif(anim, filename, fps=1)
-end
-
 end

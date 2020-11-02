@@ -1,11 +1,3 @@
-"""
-We define a `MarkovChain` struct herein. This is a discrete-time, discrete-space stochastic
-process. This is a subtype of the `AbstractStochasticProcess` abstract type, which is also
-defined herein.
-"""
-module MarkovChains
-export AbstractMarkovChain, MarkovChain
-
 abstract type AbstractStochasticProcess end
 abstract type AbstractMarkovChain <: AbstractStochasticProcess end
 
@@ -150,5 +142,4 @@ function isstochastic(vector::AbstractVector, tol::Float64 = 1e-5)
         return false
     end
     return true  # this line is reached only if all above checks pass
-end
 end

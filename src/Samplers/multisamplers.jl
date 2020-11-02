@@ -1,18 +1,10 @@
 """
-In this brief module, we subtype `Sampleable` to allow random draws from the product
+In this brief script, we subtype `Sampleable` to allow random draws from the product
 distribution of `n` marginal distributions. That is, rather than sampling just one quantity,
 we sample a vector of `n` independent quantities, potentially with different marginal
 distributions. We use this module to simulate steps in multi-agent random walks, for
 example.
 """
-module MultiSamplers
-using Distributions: AbstractRNG, Discrete, Multivariate, Sampleable
-using LightGraphs: AbstractGraph, nv
-using StochasticProcesses
-using StochasticProcesses.MC
-using StochasticProcesses.MC.NeighborSamplers
-export MultiSampler, rand
-
 
 """
     MultiSampler
@@ -96,5 +88,4 @@ Return the number of samplers.
 """
 function nsamplers(multisampler::MultiSampler)
     return length(multisampler.samplers)
-end
 end

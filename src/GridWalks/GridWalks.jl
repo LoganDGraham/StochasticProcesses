@@ -5,17 +5,9 @@ agents walking over a grid graph. Associated plotting and statistics functions a
 module GridWalks
 using Distributions: Sampleable
 using LightGraphs: AbstractGraph, grid
-using RandomWalks
-using SimulateMarkovChains
-using PlotMarkovChains
-export gridwalk, plotgridwalk
-
-struct GridWalk
-    statespace
-    initialstate
-    stepsampler
-end
-
+using StochasticProcesses
+using StochasticProcesses.RandomWalks
+#using StochasticProcesses.PlotStochasticProcesses: plot
 
 """
     gridwalk(nrows::Integer, ncols::Integer, ntimesteps::Integer,
@@ -31,9 +23,4 @@ function plotgridwalk(nrows::Integer, ncols::Integer, ntimesteps::Integer;
                       method::Symbol = :circular)
     return plot(RandomWalk(grid((nrows,ncols))), ntimesteps; method=method)
 end
-
-
-
-
-
 end

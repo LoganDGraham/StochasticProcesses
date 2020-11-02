@@ -1,5 +1,5 @@
 """
-We define the `StochasticMatrix` type and associated functionality herein. This module was
+We define the `StochasticMatrix` type and associated functionality herein. This script was
 written as an exercise in interfacing with and extending the Base library. If one intends to
 work with stochastic matrices in practice, the more idiomatic approach is to work with
 matrices, but perform checks with the `isstochastic` function. Why does this make sense?
@@ -10,9 +10,6 @@ worth. Note that it DOES make sense to implement e.g. `Diagonal` matrices sepera
 general matrices, for operations such as matrix multiplication can be much more efficient on
 the former than on the latter.
 """
-module StochasticMatrices
-export StochasticMatrix
-
 
 """
     StochasticMatrix{T, S<:AbstractMatrix{T} <: AbstractMatrix{T}
@@ -113,5 +110,4 @@ function isstochastic(matrix::AbstractMatrix, tol::Float64 = 1e-5)
         end
     end
     return true  # this line is reached only if all above checks pass
-end
 end
