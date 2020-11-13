@@ -1,8 +1,5 @@
 # StochasticProcesses
 
-[![Build Status](https://travis-ci.com/LoganDGraham/StochasticProcesses.jl.svg?branch=master)](https://travis-ci.com/LoganDGraham/StochasticProcesses.jl)
-[![Build Status](https://ci.appveyor.com/api/projects/status/github/LoganDGraham/StochasticProcesses.jl?svg=true)](https://ci.appveyor.com/project/LoganDGraham/StochasticProcesses-jl)
-
 A lightweight, efficient package for simulating stochastic processes on various domains.
 
 ## Installation
