@@ -15,7 +15,7 @@ function Base.rand(randomwalk::RandomWalk{<:AbstractArray{<:DataType},
                                           <:AbstractArray{<:Real},
                                           <:Sampleable}, ntimesteps::Integer)
     # allocate memory
-    realizationmatrix = Matrix{eltype(randomwalk)}(undef, ntimesteps,
+    realizationmatrix = Matrix{Int}(undef, ntimesteps,
                                                    length(randomwalk.initialstate))
     realizationmatrix[1,:] = randomwalk.initialstate
     # draw a random step
