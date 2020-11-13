@@ -1,7 +1,7 @@
 name = "StochasticProcesses"
 uuid = "494e3ecb-4870-42f9-9c5b-ad6e224b11d8"
 authors = ["Logan D. Graham"]
-version = "0.2.0"
+version = "0.2.1"
 
 [deps]
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
