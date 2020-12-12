@@ -1,11 +1,4 @@
 """
-An `element vector` `e_i` is a vector in which the `i`th element is a `1`, and all other
-elements are `0`. In this brief module, we subtype `Sampleable` to allow random draws in
-which each length-`n` element vector is equally likely to be drawn, then have its direction
-reversed, w.p. 1/2. This is useful for random walks on integer lattices, among other things.
-"""
-
-"""
     ElementVectorSampler
 
 A sampler that makes it easy to draw signed element vectors (of a specified dimension)
@@ -13,6 +6,9 @@ uniformly at random.
 
 Notice that, w.p. `1/2`, each element vector is multiplied by `-1`. This is useful for
 implementing random walks.
+
+An `element vector` `e_i` is a vector in which the `i`th element is a `1`, and all other
+elements are `0`. 
 
 ##### Fields
 - `dimension::Int` : the dimension (i.e. length) of element vectors.

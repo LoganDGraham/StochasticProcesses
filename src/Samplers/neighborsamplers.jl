@@ -1,10 +1,4 @@
 """
-In this brief script, we define a `Distribution` that allows random draws in which each of a
-given vertex's neighbors is equally likely to be drawn. This is useful for random walks,
-among other things.
-"""
-
-"""
     NeighborSampler{S<:AbstractGraph, T} <: Sampleable{Univariate, Discrete}
 
 A sampler that makes it easy to sample `vertex`'s neighbors in `graph`.

@@ -1,12 +1,4 @@
 """
-In this brief script, we subtype `Sampleable` to allow random draws from the product
-distribution of `n` marginal distributions. That is, rather than sampling just one quantity,
-we sample a vector of `n` independent quantities, potentially with different marginal
-distributions. We use this module to simulate steps in multi-agent random walks, for
-example.
-"""
-
-"""
     MultiSampler
 
 A sampler that makes it easy to sample from a vector of independent samplers.

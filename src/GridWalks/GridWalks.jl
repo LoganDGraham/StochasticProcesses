@@ -1,8 +1,8 @@
 """
     GridWalks
 
-This module simulates random walks on grids. In particular, we simulate a collection of
-agents walking over a grid graph.
+This module simulates random walks on grids. We support simulation of a collection of
+agents walking over the same grid graph, simultaneously.
 """
 module GridWalks
 using Distributions: Sampleable

@@ -81,7 +81,7 @@ end
 
 """
     MultiRandomWalk(graph::AbstractGraph, nwalkers::Integer,
-                    initialstate::AbstractVector = repeat([rand(1:nv(graph))], nwalkers);
+                    initialvertex::AbstractVector = repeat([rand(1:nv(graph))], nwalkers);
                     checkargs::Bool = true) -> MultiRandomWalk
 
 Construct and return a `MultiRandomWalk` on a graph.
@@ -90,7 +90,7 @@ Construct and return a `MultiRandomWalk` on a graph.
 - Time complexity: `O(n)` when `checkargs == true`; otherwise, `O(1)`.
 """
 function MultiRandomWalk(graph::AbstractGraph, nwalkers::Integer,
-                        initialstate::AbstractVector=repeat([rand(1:nv(graph))], nwalkers);
+                        initialvertex::AbstractVector=repeat([rand(1:nv(graph))], nwalkers);
                         checkargs::Bool = true)
 
     if checkargs && !(initialvertex in vertices(graph))

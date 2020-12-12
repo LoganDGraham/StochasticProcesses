@@ -7,7 +7,7 @@ and on graphs.
 module RandomWalks
 using LinearAlgebra: Diagonal
 using LightGraphs: AbstractGraph, adjacency_matrix, degree, grid, nv, vertices
-using Distributions: Categorical, Distribution, rand, Sampleable
+using Distributions: rand, Sampleable
 using StochasticProcesses
 using StochasticProcesses.MarkovChains
 using StochasticProcesses.Samplers
@@ -18,7 +18,7 @@ export
 MultiRandomWalk, RandomWalk,
 
 # methods
-nwalkers, rand, randomwalkmc,
+nwalkers, rand, randomwalkmc
 
 # include scripts
 include("randomwalks.jl")

@@ -2,13 +2,29 @@
     StochasticProcesses
 
 A lightweight, efficient package for simulating stochastic processes on various domains.
+
+##### Abstract types
+- AbstractMarkovChain
+- AbstractStochasticProcess
+
+##### Concrete types
+- MarkovChain
+- MultiRandomWalk
+- RandomWalk
+
+##### Methods
+- gridwalk
+- nwalkers
+- plot
+- rand
+- randomwalkmc
 """
 module StochasticProcesses
 
 export
 
 # abstract types
-AbstractMarkovChain,
+AbstractMarkovChain, AbstractStochasticProcess,
 
 # concrete types
 MarkovChain, MultiRandomWalk, RandomWalk,
