@@ -1,6 +1,8 @@
 """
-We define a `RandomWalk` struct herein. This is a discrete-time, discrete-space stochastic
-process.
+    RandomWalks
+
+A module that supports random walks on both integer lattices (of arbitrary finite dimension)
+and on graphs.
 """
 module RandomWalks
 using LinearAlgebra: Diagonal

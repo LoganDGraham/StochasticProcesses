@@ -19,7 +19,10 @@ rand,
 # multirandomwalks.jl
 MultiRandomWalk, nwalkers,
 
-# plotmarkovchains.jl
+# gridwalks.jl
+gridwalk,
+
+# plotrandomwalks.jl
 plot
 
 # include submodules

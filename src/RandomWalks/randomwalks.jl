@@ -90,13 +90,13 @@ use the `RandomWalk` constructor designed to dispatch on `AbstractGraph`s.
 - Time complexity: `O(n)` when `checkargs == true`; otherwise, `O(1)`.
 """
 function randomwalkmc(graph::AbstractGraph, initialvertex=rand(1:nv(graph));
-                    checkargs::Bool = true)
+                      checkargs::Bool = true)
     if checkargs && !(initialvertex in vertices(graph))
         throw(ArgumentError("initialvertex must be a vertex in graph)."))
     else
         initialdist = zeros(nv(graph))
         initialdist[initialvertex] = 1
         # broadcast division
-        return MarkovChain(Diagonal(1 ./ degree(graph))*adjacency_matrix(graph),initialdist)
+        return MarkovChain(Diagonal(1 ./ degree(graph))*adjacency_matrix(graph), initialdist)
     end
 end

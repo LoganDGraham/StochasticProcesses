@@ -1,10 +1,7 @@
 """
     MarkovChains
 
-An optimized package for efficient Markov chain simulation.
-
-In addition to general Markov chains, we offer special functionality for working with random
-walks, in particular.
+An optimized module for efficient Markov chain simulation.
 """
 module MarkovChains
 using Distributions: AbstractRNG, Categorical, Discrete, Multivariate, rand, Sampleable

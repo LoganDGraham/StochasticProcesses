@@ -1,10 +1,4 @@
 """
-This module contains plotting functionality for `MarkovChains` (including `RandomWalks`) on
-integer lattices and on graphs. We wrap functions from the `GraphPlot` and `Plots`
-libraries.
-"""
-
-"""
     plot(randomwalk::RandomWalk{<:DataType, <:Real, <:Sampleable},
          ntimesteps::Integer = 1000, nrealizations::Integer = 20) -> nothing
 

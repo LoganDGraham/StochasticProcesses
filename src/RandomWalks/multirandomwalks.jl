@@ -111,4 +111,3 @@ Return the number of walkers in `mrw`.
 function nwalkers(mrw::MultiRandomWalk)
     return length(initialstate)
 end
-#end
