@@ -14,14 +14,11 @@ using StochasticProcesses.Samplers
 
 export
 
-# randomwalks.jl
-RandomWalk, randomwalkmc,
+# concrete types
+MultiRandomWalk, RandomWalk,
 
-# multirandomwalks.jl
-MultiRandomWalk, nwalkers,
-
-# simulaterandomwalks.jl
-rand
+# methods
+nwalkers, rand, randomwalkmc,
 
 # include scripts
 include("randomwalks.jl")

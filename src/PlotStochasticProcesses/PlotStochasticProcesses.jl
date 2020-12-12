@@ -13,7 +13,10 @@ using Distributions: Sampleable
 using StochasticProcesses
 using StochasticProcesses.RandomWalks: RandomWalk
 
-export plot
+export
+
+# methods
+plot
 
 # include scripts
 include("plotrandomwalks.jl")

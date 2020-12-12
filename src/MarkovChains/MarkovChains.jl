@@ -11,10 +11,13 @@ using StochasticProcesses.Samplers
 
 export
 
-# markovchains.jl
-AbstractMarkovChain, AbstractStochasticProcess, MarkovChain,
+# abstract types
+AbstractMarkovChain, AbstractStochasticProcess,
 
-# simulatemarkovchains.jl
+# concrete types
+MarkovChain,
+
+# methods
 rand
 
 # include scripts

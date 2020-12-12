@@ -12,7 +12,7 @@ using StochasticProcesses.RandomWalks
 
 export
 
-# gridwalks.jl
+# methods
 gridwalk
 
 # include scripts

@@ -10,14 +10,11 @@ using StochasticProcesses
 
 export
 
-# elementvectorsamplers.jl
-ElementVectorSampler, EVecSampler, rand,
+# concrete types
+ElementVectorSampler, EVecSampler, MultiSampler, NeighborSampler,
 
-# neighborsamplers.jl
-NeighborSampler,
-
-# multisamplers.jl
-MultiSampler, nsamplers
+# methods
+nsamplers, rand
 
 # include scripts
 include("elementvectorsamplers.jl")

@@ -7,23 +7,14 @@ module StochasticProcesses
 
 export
 
-# markovchains.jl
-AbstractMarkovChain, MarkovChain,
+# abstract types
+AbstractMarkovChain,
 
-# randomwalks.jl
-RandomWalk, randomwalkmc,
+# concrete types
+MarkovChain, MultiRandomWalk, RandomWalk,
 
-# simulatemarkovchains.jl, simulaterandomwalks.jl
-rand,
-
-# multirandomwalks.jl
-MultiRandomWalk, nwalkers,
-
-# gridwalks.jl
-gridwalk,
-
-# plotrandomwalks.jl
-plot
+# methods
+gridwalk, nwalkers, plot, rand, randomwalkmc
 
 # include submodules
 include("Samplers/Samplers.jl")
