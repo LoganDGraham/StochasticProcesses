@@ -4,8 +4,9 @@
 A module for simulating Poisson processes.
 """
 module PoissonProcesses
-using Distributions: Poisson, rand
+using Distributions: Poisson, rand, Uniform
 using StochasticProcesses
+using StochasticProcesses.MarkovChains: AbstractMarkovChain
 
 export
 
@@ -13,9 +14,9 @@ export
 PoissonProcess,
 
 # methods
-rand
+nexpectedarrivals, rand
 
 # include scripts
 include("poissonprocesses.jl")
-include("simulatepoissonprocesses.jl")
+include("simulatepoissonprocesses.jl")  # requires poissonprocesses.jl
 end
