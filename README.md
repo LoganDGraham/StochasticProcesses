@@ -30,9 +30,9 @@ A pop-up window should render something like the following:
 <img src='/images/rw_example.png' width='800' height='500'>
 
 ### Poisson Process
-Instantiate a homogeneous Poisson process with arrival rate `1`:
+Instantiate a homogeneous Poisson process with arrival rate `1.0`:
 ```julia-repl
-pp = PoissonProcess(1)
+pp = PoissonProcess(1.0)
 ```
 
 Simulate 10 realizations of the Poisson process `pp` over the time interval `[0, 20]`, and
