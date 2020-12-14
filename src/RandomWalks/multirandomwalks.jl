@@ -20,7 +20,7 @@ struct MultiRandomWalk{S,T<:AbstractVector,U<:MultiSampler} <: AbstractMarkovCha
 end
 
 """
-    Base.show(io::IO, mrw::MultiRandomWalk)
+    Base.show(io::IO, mrw::MultiRandomWalk) -> nothing
 
 Show a `MultiRandomWalk` in a human-friendly manner.
 """
@@ -35,6 +35,7 @@ function Base.show(io::IO, mrw::MultiRandomWalk)
     println(io, "")
     println(io, " MultiSampler that allows i.i.d. steps to be drawn:")
     println(io, "  ", mrw.stepsampler)
+    return nothing
 end
 
 """

@@ -34,7 +34,7 @@ struct MarkovChain <: AbstractMarkovChain
 end
 
 """
-    Base.show(io::IO, markovchain::MarkovChain)
+    Base.show(io::IO, markovchain::MarkovChain) -> nothing
 
 Show a `MarkovChain` in a human-friendly manner.
 """
@@ -44,6 +44,7 @@ function Base.show(io::IO, markovchain::MarkovChain)
     println(io, "  ", markovchain.initialdist)
     println(io, " Transition matrix:")
     println(io, "  ", markovchain.transitionmatrix)
+    return nothing
 end
 
 """

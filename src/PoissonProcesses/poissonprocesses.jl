@@ -17,6 +17,7 @@ function Base.show(io::IO, pp::PoissonProcess)
     println(io, typeof(pp))
     println(io, " Rate (i.e. lambda):")
     println(io, pp.rate)
+    return nothing
 end
 
 """

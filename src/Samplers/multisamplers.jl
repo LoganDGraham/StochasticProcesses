@@ -11,7 +11,7 @@ struct MultiSampler{T<:AbstractVector{<:Sampleable}} <: Sampleable{Multivariate,
 end
 
 """
-    Base.show(io::IO, multisampler::MultiSampler)
+    Base.show(io::IO, multisampler::MultiSampler) -> nothing
 
 Show a `MultiSampler` in a human-friendly manner.
 """
@@ -21,6 +21,7 @@ function Base.show(io::IO, multisampler::MultiSampler)
     for sampler in multisampler.samplers
         println(io, "  ", sampler)
     end
+    return nothing
 end
 
 """

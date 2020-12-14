@@ -13,7 +13,7 @@ struct RandomWalk{S,T,U<:Sampleable} <: AbstractMarkovChain
 end
 
 """
-    Base.show(io::IO, randomwalk::RandomWalk)
+    Base.show(io::IO, randomwalk::RandomWalk) -> nothing
 
 Show a `RandomWalk` in a human-friendly manner.
 """
@@ -25,6 +25,7 @@ function Base.show(io::IO, randomwalk::RandomWalk)
     println(io, "  ", randomwalk.initialstate)
     println(io, " Sampler that allows i.i.d. steps to be drawn:")
     println(io, "  ", randomwalk.stepsampler)
+    return nothing
 end
 
 """

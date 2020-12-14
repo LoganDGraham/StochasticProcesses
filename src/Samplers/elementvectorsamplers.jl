@@ -8,7 +8,7 @@ Notice that, w.p. `1/2`, each element vector is multiplied by `-1`. This is usef
 implementing random walks.
 
 An `element vector` `e_i` is a vector in which the `i`th element is a `1`, and all other
-elements are `0`. 
+elements are `0`.
 
 ##### Fields
 - `dimension::Int` : the dimension (i.e. length) of element vectors.
@@ -25,13 +25,14 @@ Alias for `ElementVectorSampler`
 EVecSampler = ElementVectorSampler
 
 """
-    Base.show(io::IO, elementvectorsampler::ElementVectorSampler)
+    Base.show(io::IO, elementvectorsampler::ElementVectorSampler) -> nothing
 
 Show an `ElementVectorSampler` in a human-friendly manner.
 """
 function Base.show(io::IO, elementvectorsampler::ElementVectorSampler)
     println(io, typeof(elementvectorsampler))
     println(io, " dimension: ", elementvectorsampler.dimension)
+    return nothing
 end
 
 """

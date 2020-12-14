@@ -33,7 +33,7 @@ function NeighborSampler(graph::AbstractGraph, vertex::Int; checkargs::Bool = tr
 end
 
 """
-    Base.show(io::IO, neighborsampler::NeighborSampler)
+    Base.show(io::IO, neighborsampler::NeighborSampler) -> nothing
 
 Show an `NeighborSampler` in a human-friendly manner.
 """
@@ -41,6 +41,7 @@ function Base.show(io::IO, neighborsampler::NeighborSampler)
     println(io, typeof(neighborsampler))
     println(io, " graph: ", neighborsampler.graph)
     println(io, " vertex: ", neighborsampler.vertex)
+    return nothing
 end
 
 """

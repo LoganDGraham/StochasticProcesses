@@ -5,7 +5,7 @@ A lightweight, efficient package for simulating stochastic processes on various 
 ## Installation
 Installation is straightforward: enter Pkg mode by hitting `]`, and then run
 ```julia-repl
-(v1.0) pkg> add StochasticProcesses
+(v1.5) pkg> add StochasticProcesses
 ```
 
 ## Basic Example

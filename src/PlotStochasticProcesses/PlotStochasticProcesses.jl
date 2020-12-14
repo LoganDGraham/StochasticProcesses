@@ -10,8 +10,8 @@ using GraphRecipes
 using GraphPlot
 using LightGraphs: AbstractGraph, nv, vertices
 using Distributions: Sampleable
-using StochasticProcesses
 using StochasticProcesses.RandomWalks: RandomWalk
+using StochasticProcesses.PoissonProcesses
 
 export
 
@@ -20,4 +20,5 @@ plot
 
 # include scripts
 include("plotrandomwalks.jl")
+include("plotpoissonprocesses.jl")
 end
