@@ -35,7 +35,7 @@ Instantiate a homogeneous Poisson process with arrival rate `1.0`:
 pp = PoissonProcess(1.0)
 ```
 
-Simulate 10 realizations of the Poisson process `pp` over the time interval `[0, 20]`, and
+Simulate 10 realizations of the Poisson process `pp` over the time interval `[0, 30]`, and
 plot the results:
 ```julia-repl
 plot(pp)

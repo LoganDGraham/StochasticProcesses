@@ -31,7 +31,7 @@ function getplotvectors(pp::PoissonProcess, intervallength::Real)
 end
 
 """
-    plot(pp::PoissonProcess, intervallength::Real = 20.0, nrealizations::Integer = 10) -> (
+    plot(pp::PoissonProcess, intervallength::Real = 30.0, nrealizations::Integer = 10) -> (
     nothing)
 
 Simulate and plot `nrealizations` realizations of a `PoissonProcess`.
